@@ -13,7 +13,7 @@
 		32A05B6118D5F2B5000725E9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 32A05B5F18D5F2B5000725E9 /* InfoPlist.strings */; };
 		32A05B6318D5F2B5000725E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A05B6218D5F2B5000725E9 /* main.m */; };
 		32A05B6718D5F2B5000725E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A05B6618D5F2B5000725E9 /* AppDelegate.m */; };
-		32A05B6A18D5F2B5000725E9 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32A05B6818D5F2B5000725E9 /* Main_iPhone.storyboard */; };
+		32A05B6A18D5F2B5000725E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32A05B6818D5F2B5000725E9 /* Main.storyboard */; };
 		32A05B7018D5F2B5000725E9 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A05B6F18D5F2B5000725E9 /* MasterViewController.m */; };
 		32A05B7518D5F2B5000725E9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32A05B7418D5F2B5000725E9 /* Images.xcassets */; };
 		32A05B7C18D5F2B5000725E9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32A05B7B18D5F2B5000725E9 /* XCTest.framework */; };
@@ -45,7 +45,7 @@
 		32A05B6418D5F2B5000725E9 /* AutoSizeTableCell-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AutoSizeTableCell-Prefix.pch"; sourceTree = "<group>"; };
 		32A05B6518D5F2B5000725E9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		32A05B6618D5F2B5000725E9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		32A05B6918D5F2B5000725E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		32A05B6918D5F2B5000725E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		32A05B6E18D5F2B5000725E9 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		32A05B6F18D5F2B5000725E9 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		32A05B7418D5F2B5000725E9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -85,7 +85,6 @@
 		32A05B4A18D5F2B5000725E9 = {
 			isa = PBXGroup;
 			children = (
-				32A05B9718D63886000725E9,
 				32A05B5C18D5F2B5000725E9 /* AutoSizeTableCell */,
 				32A05B8118D5F2B5000725E9 /* AutoSizeTableCellTests */,
 				32A05B5518D5F2B5000725E9 /* Frameworks */,
@@ -118,7 +117,7 @@
 			children = (
 				32A05B6518D5F2B5000725E9 /* AppDelegate.h */,
 				32A05B6618D5F2B5000725E9 /* AppDelegate.m */,
-				32A05B6818D5F2B5000725E9 /* Main_iPhone.storyboard */,
+				32A05B6818D5F2B5000725E9 /* Main.storyboard */,
 				32A05B6E18D5F2B5000725E9 /* MasterViewController.h */,
 				32A05B6F18D5F2B5000725E9 /* MasterViewController.m */,
 				32A05B7418D5F2B5000725E9 /* Images.xcassets */,
@@ -235,8 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32A05B7518D5F2B5000725E9 /* Images.xcassets in Resources */,
-				32A05B6A18D5F2B5000725E9 /* Main_iPhone.storyboard in Resources */,
-				32A05B9818D63886000725E9,
+				32A05B6A18D5F2B5000725E9 /* Main.storyboard in Resources */,
 				32A05B6118D5F2B5000725E9 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,12 +288,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		32A05B6818D5F2B5000725E9 /* Main_iPhone.storyboard */ = {
+		32A05B6818D5F2B5000725E9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				32A05B6918D5F2B5000725E9 /* Base */,
 			);
-			name = Main_iPhone.storyboard;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		32A05B8418D5F2B5000725E9 /* InfoPlist.strings */ = {

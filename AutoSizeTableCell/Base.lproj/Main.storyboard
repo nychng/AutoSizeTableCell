@@ -44,13 +44,9 @@
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="wVA-YO-hFW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="d3P-M7-ByW" secondAttribute="leading" constant="20" id="76w-Y2-XK9"/>
                                         <constraint firstItem="wVA-YO-hFW" firstAttribute="top" secondItem="d3P-M7-ByW" secondAttribute="top" constant="20" symbolic="YES" id="9ai-rX-ZLx"/>
                                         <constraint firstItem="wVA-YO-hFW" firstAttribute="leading" secondItem="d3P-M7-ByW" secondAttribute="leading" constant="20" symbolic="YES" id="GfL-uP-DHW"/>
-                                        <constraint firstItem="wVA-YO-hFW" firstAttribute="top" relation="greaterThanOrEqual" secondItem="d3P-M7-ByW" secondAttribute="top" constant="20" id="apw-1z-dyI"/>
-                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="wVA-YO-hFW" secondAttribute="bottom" constant="20" id="fP8-Nc-58i"/>
                                         <constraint firstAttribute="bottom" secondItem="wVA-YO-hFW" secondAttribute="bottom" constant="20" symbolic="YES" id="lxL-ZT-NvT"/>
-                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wVA-YO-hFW" secondAttribute="trailing" constant="20" id="ssZ-9Y-7BB"/>
                                         <constraint firstAttribute="trailing" secondItem="wVA-YO-hFW" secondAttribute="trailing" constant="20" symbolic="YES" id="uYS-4Q-DN1"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -66,7 +62,7 @@
                             <outlet property="delegate" destination="pGg-6v-bdr" id="Y6K-Cp-Qkv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Master" id="tQt-TN-PWz"/>
+                    <navigationItem key="navigationItem" title="AutoSizeTableCell" id="tQt-TN-PWz"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Cn-md-YlS" sceneMemberID="firstResponder"/>
             </objects>
