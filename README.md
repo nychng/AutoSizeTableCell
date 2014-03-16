@@ -40,3 +40,5 @@ and added the **self.prototypeCell.bounds** line in to the heightForRowAtIndexPa
     return size.height+1;
 }
 ```
+
+don't seem to need the UIContentSizeCategoryDidChangeNotification or the extra constraints in my case.
