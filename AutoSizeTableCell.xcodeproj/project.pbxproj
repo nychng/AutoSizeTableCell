@@ -14,15 +14,15 @@
 		32A05B6318D5F2B5000725E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A05B6218D5F2B5000725E9 /* main.m */; };
 		32A05B6718D5F2B5000725E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A05B6618D5F2B5000725E9 /* AppDelegate.m */; };
 		32A05B6A18D5F2B5000725E9 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32A05B6818D5F2B5000725E9 /* Main_iPhone.storyboard */; };
-		32A05B6D18D5F2B5000725E9 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32A05B6B18D5F2B5000725E9 /* Main_iPad.storyboard */; };
 		32A05B7018D5F2B5000725E9 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A05B6F18D5F2B5000725E9 /* MasterViewController.m */; };
-		32A05B7318D5F2B5000725E9 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A05B7218D5F2B5000725E9 /* DetailViewController.m */; };
 		32A05B7518D5F2B5000725E9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32A05B7418D5F2B5000725E9 /* Images.xcassets */; };
 		32A05B7C18D5F2B5000725E9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32A05B7B18D5F2B5000725E9 /* XCTest.framework */; };
 		32A05B7D18D5F2B5000725E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32A05B5618D5F2B5000725E9 /* Foundation.framework */; };
 		32A05B7E18D5F2B5000725E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32A05B5A18D5F2B5000725E9 /* UIKit.framework */; };
 		32A05B8618D5F2B5000725E9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 32A05B8418D5F2B5000725E9 /* InfoPlist.strings */; };
 		32A05B8818D5F2B5000725E9 /* AutoSizeTableCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A05B8718D5F2B5000725E9 /* AutoSizeTableCellTests.m */; };
+		32A05B9618D636D8000725E9 /* MyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A05B9518D636D8000725E9 /* MyTableViewCell.m */; };
+		32A05B9818D63886000725E9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 32A05B9718D63886000725E9 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,17 +47,17 @@
 		32A05B6518D5F2B5000725E9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		32A05B6618D5F2B5000725E9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		32A05B6918D5F2B5000725E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		32A05B6C18D5F2B5000725E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		32A05B6E18D5F2B5000725E9 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		32A05B6F18D5F2B5000725E9 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		32A05B7118D5F2B5000725E9 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		32A05B7218D5F2B5000725E9 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		32A05B7418D5F2B5000725E9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		32A05B7A18D5F2B5000725E9 /* AutoSizeTableCellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoSizeTableCellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32A05B7B18D5F2B5000725E9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		32A05B8318D5F2B5000725E9 /* AutoSizeTableCellTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AutoSizeTableCellTests-Info.plist"; sourceTree = "<group>"; };
 		32A05B8518D5F2B5000725E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		32A05B8718D5F2B5000725E9 /* AutoSizeTableCellTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoSizeTableCellTests.m; sourceTree = "<group>"; };
+		32A05B9418D636D8000725E9 /* MyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewCell.h; sourceTree = "<group>"; };
+		32A05B9518D636D8000725E9 /* MyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewCell.m; sourceTree = "<group>"; };
+		32A05B9718D63886000725E9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = AutoSizeTableCell/README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +87,7 @@
 		32A05B4A18D5F2B5000725E9 = {
 			isa = PBXGroup;
 			children = (
+				32A05B9718D63886000725E9 /* README.md */,
 				32A05B5C18D5F2B5000725E9 /* AutoSizeTableCell */,
 				32A05B8118D5F2B5000725E9 /* AutoSizeTableCellTests */,
 				32A05B5518D5F2B5000725E9 /* Frameworks */,
@@ -120,13 +121,12 @@
 				32A05B6518D5F2B5000725E9 /* AppDelegate.h */,
 				32A05B6618D5F2B5000725E9 /* AppDelegate.m */,
 				32A05B6818D5F2B5000725E9 /* Main_iPhone.storyboard */,
-				32A05B6B18D5F2B5000725E9 /* Main_iPad.storyboard */,
 				32A05B6E18D5F2B5000725E9 /* MasterViewController.h */,
 				32A05B6F18D5F2B5000725E9 /* MasterViewController.m */,
-				32A05B7118D5F2B5000725E9 /* DetailViewController.h */,
-				32A05B7218D5F2B5000725E9 /* DetailViewController.m */,
 				32A05B7418D5F2B5000725E9 /* Images.xcassets */,
 				32A05B5D18D5F2B5000725E9 /* Supporting Files */,
+				32A05B9418D636D8000725E9 /* MyTableViewCell.h */,
+				32A05B9518D636D8000725E9 /* MyTableViewCell.m */,
 			);
 			path = AutoSizeTableCell;
 			sourceTree = "<group>";
@@ -236,9 +236,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32A05B6D18D5F2B5000725E9 /* Main_iPad.storyboard in Resources */,
 				32A05B7518D5F2B5000725E9 /* Images.xcassets in Resources */,
 				32A05B6A18D5F2B5000725E9 /* Main_iPhone.storyboard in Resources */,
+				32A05B9818D63886000725E9 /* README.md in Resources */,
 				32A05B6118D5F2B5000725E9 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,9 +259,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				32A05B6718D5F2B5000725E9 /* AppDelegate.m in Sources */,
+				32A05B9618D636D8000725E9 /* MyTableViewCell.m in Sources */,
 				32A05B7018D5F2B5000725E9 /* MasterViewController.m in Sources */,
 				32A05B6318D5F2B5000725E9 /* main.m in Sources */,
-				32A05B7318D5F2B5000725E9 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,14 +298,6 @@
 				32A05B6918D5F2B5000725E9 /* Base */,
 			);
 			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		32A05B6B18D5F2B5000725E9 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				32A05B6C18D5F2B5000725E9 /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		32A05B8418D5F2B5000725E9 /* InfoPlist.strings */ = {
@@ -476,6 +468,7 @@
 				32A05B8D18D5F2B5000725E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		32A05B8E18D5F2B5000725E9 /* Build configuration list for PBXNativeTarget "AutoSizeTableCellTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +477,7 @@
 				32A05B9018D5F2B5000725E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
