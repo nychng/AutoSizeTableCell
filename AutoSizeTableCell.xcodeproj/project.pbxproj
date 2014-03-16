@@ -85,7 +85,7 @@
 		32A05B4A18D5F2B5000725E9 = {
 			isa = PBXGroup;
 			children = (
-				32A05B9718D63886000725E9 /* README.md */,
+				32A05B9718D63886000725E9,
 				32A05B5C18D5F2B5000725E9 /* AutoSizeTableCell */,
 				32A05B8118D5F2B5000725E9 /* AutoSizeTableCellTests */,
 				32A05B5518D5F2B5000725E9 /* Frameworks */,
@@ -236,7 +236,7 @@
 			files = (
 				32A05B7518D5F2B5000725E9 /* Images.xcassets in Resources */,
 				32A05B6A18D5F2B5000725E9 /* Main_iPhone.storyboard in Resources */,
-				32A05B9818D63886000725E9 /* README.md in Resources */,
+				32A05B9818D63886000725E9,
 				32A05B6118D5F2B5000725E9 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
