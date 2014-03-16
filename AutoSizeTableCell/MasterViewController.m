@@ -19,22 +19,6 @@
                 @"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at feugiat dolor. Vestibulum vitae varius nisi. Proin bibendum sodales mauris, ut euismod nisl tempor nec. Integer id magna posuere, pulvinar dolor ac, feugiat elit. Sed scelerisque posuere felis, id pellentesque leo. Aenean id lacus quam. Phasellus rhoncus suscipit consequat. Curabitur suscipit sem nec molestie iaculis. In rhoncus pretium ante, sit amet rutrum magna sodales nec. Quisque ac libero at velit aliquam dignissim. Nam ut porta lorem.",
                 @"Donec posuere, mi eget fringilla convallis, quam mauris ornare libero, fermentum elementum odio felis eget ante. Praesent tempor ligula felis, quis faucibus purus euismod condimentum. Suspendisse adipiscing lacus in tellus luctus, vel accumsan risus pharetra.",
                 nil];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(didChangePreferredContentSize:)
-                                                 name:UIContentSizeCategoryDidChangeNotification object:nil];
-}
-
-- (void)dealloc
-{
-    [[NSNotificationCenter defaultCenter] removeObserver:self
-                                                    name:UIContentSizeCategoryDidChangeNotification
-                                                  object:nil];
-}
-
-- (void)didChangePreferredContentSize:(NSNotification *)notification
-{
-    [self.tableView reloadData];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
