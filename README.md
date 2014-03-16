@@ -1,6 +1,6 @@
 # AutoSizeTableCell
 
-Minimal example of how to use auto layout to calculate table cell height dynamically based on the content of a UILabel - also works when orientation changes.
+A minimal example of how to use auto layout to calculate table cell height dynamically based on the content of a UILabel - also works when orientation changes.
 
 Based on the examples at:
 [useyourloaf.com](http://useyourloaf.com/blog/2014/02/14/table-view-cells-with-varying-row-heights.html)
