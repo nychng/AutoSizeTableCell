@@ -13,7 +13,6 @@ added the following to my custom cell:
     
     // Make sure the contentView does a layout pass here so that its subviews have their frames set, which we
     // need to use to set the preferredMaxLayoutWidth below.
-    [self.contentView setNeedsLayout];
     [self.contentView layoutIfNeeded];
     
     // Set the preferredMaxLayoutWidth of the mutli-line bodyLabel based on the evaluated width of the label's frame,
@@ -33,7 +32,6 @@ and added the **self.prototypeCell.bounds** line in to the heightForRowAtIndexPa
     
     self.prototypeCell.bounds = CGRectMake(0.0f, 0.0f, CGRectGetWidth(self.tableView.bounds), CGRectGetHeight(self.prototypeCell.bounds));
     
-    [self.prototypeCell setNeedsLayout];    
     [self.prototypeCell layoutIfNeeded];
         
     CGSize size = [self.prototypeCell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
@@ -41,4 +39,4 @@ and added the **self.prototypeCell.bounds** line in to the heightForRowAtIndexPa
 }
 ```
 
-don't seem to need the UIContentSizeCategoryDidChangeNotification or the extra constraints in my case.
+PS: don't seem to need the *UIContentSizeCategoryDidChangeNotification*, the *extra constraints* or the *setNeedsLayout* call
