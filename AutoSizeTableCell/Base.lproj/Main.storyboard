@@ -31,7 +31,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="116" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="433-QC-n1z">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="116" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="433-QC-n1z">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -72,13 +72,13 @@
                                 <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t9C-B6-b9n">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t9C-B6-b9n">
                                         <rect key="frame" x="20" y="7" width="226" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17V-m2-5a5">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17V-m2-5a5">
                                         <rect key="frame" x="254" y="7" width="46" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button">
@@ -91,14 +91,25 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="Fah-sh-zKj"/>
+                                    <constraint firstItem="t9C-B6-b9n" firstAttribute="top" secondItem="mMs-4A-ZKF" secondAttribute="top" constant="7" id="1Rj-xf-B6Y"/>
+                                    <constraint firstItem="t9C-B6-b9n" firstAttribute="leading" secondItem="mMs-4A-ZKF" secondAttribute="leading" constant="20" id="CFe-au-naY"/>
+                                    <constraint firstItem="17V-m2-5a5" firstAttribute="leading" secondItem="t9C-B6-b9n" secondAttribute="trailing" constant="8" id="Dql-19-3fy"/>
+                                    <constraint firstItem="17V-m2-5a5" firstAttribute="top" secondItem="mMs-4A-ZKF" secondAttribute="top" constant="7" id="IB3-dY-5gd"/>
+                                    <constraint firstAttribute="bottom" secondItem="t9C-B6-b9n" secondAttribute="bottom" constant="7" id="TdZ-Fs-cJ6"/>
+                                    <constraint firstItem="17V-m2-5a5" firstAttribute="leading" secondItem="t9C-B6-b9n" secondAttribute="trailing" constant="8" id="b9K-pf-xuw"/>
+                                    <constraint firstAttribute="trailing" secondItem="17V-m2-5a5" secondAttribute="trailing" constant="20" id="fqS-lB-UH4"/>
                                     <constraint firstAttribute="height" constant="44" id="goj-83-t8i"/>
+                                    <constraint firstAttribute="bottom" secondItem="17V-m2-5a5" secondAttribute="bottom" constant="7" id="kij-ia-a94"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="433-QC-n1z" secondAttribute="trailing" id="A5A-X4-aoN"/>
+                            <constraint firstItem="Kma-u5-GKR" firstAttribute="top" secondItem="433-QC-n1z" secondAttribute="bottom" id="Fpm-ed-bDu"/>
                             <constraint firstItem="Kma-u5-GKR" firstAttribute="top" secondItem="mMs-4A-ZKF" secondAttribute="bottom" id="HxT-ev-fec"/>
+                            <constraint firstItem="433-QC-n1z" firstAttribute="leading" secondItem="AYw-XH-LJo" secondAttribute="leading" id="W2v-6I-M2R"/>
+                            <constraint firstItem="433-QC-n1z" firstAttribute="top" secondItem="AYw-XH-LJo" secondAttribute="top" id="sA4-Id-2VD"/>
                             <constraint firstAttribute="trailing" secondItem="mMs-4A-ZKF" secondAttribute="trailing" id="vY8-er-uvK"/>
                             <constraint firstItem="mMs-4A-ZKF" firstAttribute="leading" secondItem="AYw-XH-LJo" secondAttribute="leading" id="vyi-nG-637"/>
                         </constraints>
