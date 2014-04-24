@@ -83,6 +83,9 @@
     [self.prototypeCell layoutIfNeeded];
         
     CGSize size = [self.prototypeCell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
+    
+    NSLog(@"%ld", self.interfaceOrientation);
+    
     return size.height+1;
 }
 
@@ -94,7 +97,12 @@
 - (void)keyboardWillShow:(NSNotification *)note
 {
     [UIView animateWithDuration:5 animations:^{
-        self.verticalConstraint.constant += 216;
+        if (self.interfaceOrientation == 1) {
+            self.verticalConstraint.constant += 216;
+        } else {
+            self.verticalConstraint.constant += 162;
+        }
+
     }];
 }
 
