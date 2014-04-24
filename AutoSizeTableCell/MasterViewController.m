@@ -9,7 +9,16 @@
 #import "MasterViewController.h"
 #import "MyTableViewCell.h"
 
+@interface MasterViewController ()
+@property (weak, nonatomic) IBOutlet UIView *bottomBarView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *verticalConstraint;
+@end
+
 @implementation MasterViewController
+
+- (IBAction)button:(id)sender {
+    [self.view endEditing:YES];
+}
 
 - (void)viewDidLoad
 {
@@ -17,8 +26,30 @@
    
     self.objects = [NSMutableArray arrayWithObjects:
                 @"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at feugiat dolor. Vestibulum vitae varius nisi. Proin bibendum sodales mauris, ut euismod nisl tempor nec. Integer id magna posuere, pulvinar dolor ac, feugiat elit. Sed scelerisque posuere felis, id pellentesque leo. Aenean id lacus quam. Phasellus rhoncus suscipit consequat. Curabitur suscipit sem nec molestie iaculis. In rhoncus pretium ante, sit amet rutrum magna sodales nec. Quisque ac libero at velit aliquam dignissim. Nam ut porta lorem.",
+                @"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at feugiat dolor. Vestibulum vitae varius nisi. Proin bibendum sodales mauris, ut euismod nisl tempor nec. Integer id magna posuere, pulvinar dolor ac, feugiat elit. Sed scelerisque posuere felis, id pellentesque leo. Aenean id lacus quam. Phasellus rhoncus suscipit consequat. Curabitur suscipit sem nec molestie iaculis. In rhoncus pretium ante, sit amet rutrum magna sodales nec. Quisque ac libero at velit aliquam dignissim. Nam ut porta lorem.",
                 @"Donec posuere, mi eget fringilla convallis, quam mauris ornare libero, fermentum elementum odio felis eget ante. Praesent tempor ligula felis, quis faucibus purus euismod condimentum. Suspendisse adipiscing lacus in tellus luctus, vel accumsan risus pharetra.",
                 nil];
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
+    view.backgroundColor = [UIColor redColor];
+    [view setAutoresizingMask: UIViewAutoresizingFlexibleTopMargin];
+    [self.view addSubview:view];
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    // Set keyboard notifications
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:)
+                                                 name:UIKeyboardWillShowNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:)
+                                                 name:UIKeyboardWillHideNotification object:nil];
+}
+
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -65,5 +96,18 @@
     return UITableViewAutomaticDimension;
 }
 
+- (void)keyboardWillShow:(NSNotification *)note
+{
+    [UIView animateWithDuration:5 animations:^{
+        self.verticalConstraint.constant += 216;
+    }];
+}
+
+- (void)keyboardWillHide:(NSNotification *)note
+{
+    [UIView animateWithDuration:5 animations:^{
+        self.verticalConstraint.constant = 0;
+    }];
+}
 
 @end

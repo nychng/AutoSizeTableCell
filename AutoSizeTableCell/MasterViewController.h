@@ -10,8 +10,9 @@
 
 @class MyTableViewCell;
 
-@interface MasterViewController : UITableViewController
+@interface MasterViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSMutableArray * objects;
 @property (nonatomic, strong) MyTableViewCell *prototypeCell;
 
