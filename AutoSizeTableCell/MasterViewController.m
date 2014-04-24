@@ -9,7 +9,7 @@
 #import "MasterViewController.h"
 #import "MyTableViewCell.h"
 
-@interface MasterViewController ()
+@interface MasterViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UIView *bottomBarView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *verticalConstraint;
 @end
